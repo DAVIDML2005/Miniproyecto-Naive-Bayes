@@ -12,7 +12,7 @@ El objetivo es construir un pipeline reproducible que permita evaluar qué model
 
 ## Colaboradores
 
-- David Márquez
+- David Marquez
 - Cristian Linero
 
 ## Dataset
