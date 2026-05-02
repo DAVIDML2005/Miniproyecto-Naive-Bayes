@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Miniproyecto &#8212; My sample book</title>
+    <title>Miniproyecto: Naive Bayes &#8212; Clasificación de Enfermedades Cardíacas con Modelos Bayesianos</title>
   
   
   
@@ -62,8 +62,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Notebooks with MyST Markdown" href="markdown-notebooks.html" />
-    <link rel="prev" title="Reflexiones y Conclusiones" href="markdown.html" />
+    <link rel="next" title="Reflexiones y Conclusiones" href="conclusion.html" />
+    <link rel="prev" title="Introducción al Proyecto" href="introduccion.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -144,7 +144,7 @@
     
   
 
-<a class="navbar-brand logo" href="intro.html">
+<a class="navbar-brand logo" href="introduccion.html">
   
   
   
@@ -155,8 +155,8 @@
       
     
     
-    <img src="_static/logo.png" class="logo__image only-light" alt="My sample book - Home"/>
-    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
+    <img src="_static/logo.png" class="logo__image only-light" alt="Clasificación de Enfermedades Cardíacas con Modelos Bayesianos - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Clasificación de Enfermedades Cardíacas con Modelos Bayesianos - Home"/>`);</script>
   
   
 </a></div>
@@ -176,15 +176,14 @@
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
-                <a class="reference internal" href="intro.html">
+                <a class="reference internal" href="introduccion.html">
                     Introducción al Proyecto
                 </a>
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="markdown.html"><strong>Reflexiones y Conclusiones</strong></a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>Miniproyecto</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><strong>Miniproyecto: Naive Bayes</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="conclusion.html"><strong>Reflexiones y Conclusiones</strong></a></li>
 </ul>
 
     </div>
@@ -239,7 +238,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+      <li><a href="https://github.com/DAVIDML2005/Miniproyecto-Naive-Bayes" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -256,7 +255,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fnotebooks.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/DAVIDML2005/Miniproyecto-Naive-Bayes/issues/new?title=Issue%20on%20page%20%2Fnotebooks.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -370,7 +369,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Miniproyecto</h1>
+    <h1>Miniproyecto: Naive Bayes</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -382,7 +381,7 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#importar-librerias"><strong>Importar Librerías</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lectura-de-datos"><strong>Lectura de Datos</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#valores-unicos"><strong>Valores únicos</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#valores-unicos"><strong>Valores Únicos</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#valores-nulos"><strong>Valores Nulos</strong></a></li>
 </ul>
 </li>
@@ -402,7 +401,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-bivariado"><strong>Análisis Bivariado</strong></a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-binarias-vs-num"><strong>Variables Binarias vs Num</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-categoricas-vs-num"><strong>Variables Categóricas vs Num</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-numericas-vs-num">Variables Númericas vs Num</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-numericas-vs-num"><strong>Variables Númericas vs Num</strong></a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-multivariado"><strong>Análisis Multivariado</strong></a></li>
@@ -424,7 +423,7 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comparacion-con-logisticregression"><strong>Comparación con LogisticRegression</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluacion-del-modelo-de-clasificacion-en-el-conjunto-de-prueba-modelo-de-logisticregression"><strong>Evaluación del Modelo de Clasificación en el Conjunto de Prueba (Modelo de LogisticRegression)</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluacion-del-modelo-de-clasificacion-en-el-conjunto-de-prueba-modelo-de-logistic-regression"><strong>Evaluación del Modelo de Clasificación en el Conjunto de Prueba (Modelo de Logistic Regression)</strong></a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-de-calibracion-y-distribucion-de-probabilidades-del-modelo-logisticregression"><strong>Análisis de Calibración y Distribución de Probabilidades del Modelo LogisticRegression</strong></a></li>
 </ul>
 </li>
@@ -440,8 +439,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="miniproyecto">
-<h1><strong>Miniproyecto</strong><a class="headerlink" href="#miniproyecto" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="miniproyecto-naive-bayes">
+<h1><strong>Miniproyecto: Naive Bayes</strong><a class="headerlink" href="#miniproyecto-naive-bayes" title="Link to this heading">#</a></h1>
 <section id="importar-librerias">
 <h2><strong>Importar Librerías</strong><a class="headerlink" href="#importar-librerias" title="Link to this heading">#</a></h2>
 <p>Se importan las librerías esenciales para facilitar el análisis que abarca la carga de datos, la visualización, la transformación de datos, la fusión y la unión.</p>
@@ -453,6 +452,7 @@ document.write(`
 <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">scipy.stats</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">stats</span>
+
 <span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.preprocessing</span><span class="w"> </span><span class="kn">import</span> <span class="n">OneHotEncoder</span><span class="p">,</span> <span class="n">StandardScaler</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.linear_model</span><span class="w"> </span><span class="kn">import</span> <span class="n">LogisticRegression</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.model_selection</span><span class="w"> </span><span class="kn">import</span> <span class="n">GridSearchCV</span><span class="p">,</span> <span class="n">train_test_split</span>
@@ -477,6 +477,7 @@ document.write(`
 <span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.preprocessing</span><span class="w"> </span><span class="kn">import</span> <span class="n">KBinsDiscretizer</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.linear_model</span><span class="w"> </span><span class="kn">import</span> <span class="n">LogisticRegressionCV</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.calibration</span><span class="w"> </span><span class="kn">import</span> <span class="n">calibration_curve</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.metrics</span><span class="w"> </span><span class="kn">import</span> <span class="n">confusion_matrix</span><span class="p">,</span> <span class="n">ConfusionMatrixDisplay</span>
 <span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s2">&quot;ignore&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -503,124 +504,6 @@ document.write(`
   
 <span class="c1"># Se unen X e y (ambos son DataFrames) con el fin de facilitar el EDA</span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">TimeoutError</span><span class="g g-Whitespace">                              </span>Traceback (most recent call last)
-<span class="nn">File ~\miniconda3\envs\ml_venv\lib\urllib\request.py:1346,</span> in <span class="ni">AbstractHTTPHandler.do_open</span><span class="nt">(self, http_class, req, **http_conn_args)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1345</span> <span class="k">try</span><span class="p">:</span>
-<span class="ne">-&gt; </span><span class="mi">1346</span>     <span class="n">h</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="n">req</span><span class="o">.</span><span class="n">get_method</span><span class="p">(),</span> <span class="n">req</span><span class="o">.</span><span class="n">selector</span><span class="p">,</span> <span class="n">req</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">headers</span><span class="p">,</span>
-<span class="g g-Whitespace">   </span><span class="mi">1347</span>               <span class="n">encode_chunked</span><span class="o">=</span><span class="n">req</span><span class="o">.</span><span class="n">has_header</span><span class="p">(</span><span class="s1">&#39;Transfer-encoding&#39;</span><span class="p">))</span>
-<span class="g g-Whitespace">   </span><span class="mi">1348</span> <span class="k">except</span> <span class="ne">OSError</span> <span class="k">as</span> <span class="n">err</span><span class="p">:</span> <span class="c1"># timeout error</span>
-
-<span class="nn">File ~\miniconda3\envs\ml_venv\lib\http\client.py:1285,</span> in <span class="ni">HTTPConnection.request</span><span class="nt">(self, method, url, body, headers, encode_chunked)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1284</span><span class="w"> </span><span class="sd">&quot;&quot;&quot;Send a complete request to the server.&quot;&quot;&quot;</span>
-<span class="ne">-&gt; </span><span class="mi">1285</span> <span class="bp">self</span><span class="o">.</span><span class="n">_send_request</span><span class="p">(</span><span class="n">method</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">body</span><span class="p">,</span> <span class="n">headers</span><span class="p">,</span> <span class="n">encode_chunked</span><span class="p">)</span>
-
-<span class="nn">File ~\miniconda3\envs\ml_venv\lib\http\client.py:1331,</span> in <span class="ni">HTTPConnection._send_request</span><span class="nt">(self, method, url, body, headers, encode_chunked)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1330</span>     <span class="n">body</span> <span class="o">=</span> <span class="n">_encode</span><span class="p">(</span><span class="n">body</span><span class="p">,</span> <span class="s1">&#39;body&#39;</span><span class="p">)</span>
-<span class="ne">-&gt; </span><span class="mi">1331</span> <span class="bp">self</span><span class="o">.</span><span class="n">endheaders</span><span class="p">(</span><span class="n">body</span><span class="p">,</span> <span class="n">encode_chunked</span><span class="o">=</span><span class="n">encode_chunked</span><span class="p">)</span>
-
-<span class="nn">File ~\miniconda3\envs\ml_venv\lib\http\client.py:1280,</span> in <span class="ni">HTTPConnection.endheaders</span><span class="nt">(self, message_body, encode_chunked)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1279</span>     <span class="k">raise</span> <span class="n">CannotSendHeader</span><span class="p">()</span>
-<span class="ne">-&gt; </span><span class="mi">1280</span> <span class="bp">self</span><span class="o">.</span><span class="n">_send_output</span><span class="p">(</span><span class="n">message_body</span><span class="p">,</span> <span class="n">encode_chunked</span><span class="o">=</span><span class="n">encode_chunked</span><span class="p">)</span>
-
-<span class="nn">File ~\miniconda3\envs\ml_venv\lib\http\client.py:1040,</span> in <span class="ni">HTTPConnection._send_output</span><span class="nt">(self, message_body, encode_chunked)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1039</span> <span class="k">del</span> <span class="bp">self</span><span class="o">.</span><span class="n">_buffer</span><span class="p">[:]</span>
-<span class="ne">-&gt; </span><span class="mi">1040</span> <span class="bp">self</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1042</span> <span class="k">if</span> <span class="n">message_body</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-<span class="g g-Whitespace">   </span><span class="mi">1043</span> 
-<span class="g g-Whitespace">   </span><span class="mi">1044</span>     <span class="c1"># create a consistent interface to message_body</span>
-
-<span class="nn">File ~\miniconda3\envs\ml_venv\lib\http\client.py:980,</span> in <span class="ni">HTTPConnection.send</span><span class="nt">(self, data)</span>
-<span class="g g-Whitespace">    </span><span class="mi">979</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">auto_open</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">980</span>     <span class="bp">self</span><span class="o">.</span><span class="n">connect</span><span class="p">()</span>
-<span class="g g-Whitespace">    </span><span class="mi">981</span> <span class="k">else</span><span class="p">:</span>
-
-<span class="nn">File ~\miniconda3\envs\ml_venv\lib\http\client.py:1447,</span> in <span class="ni">HTTPSConnection.connect</span><span class="nt">(self)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1445</span> <span class="s2">&quot;Connect to a host on a given (SSL) port.&quot;</span>
-<span class="ne">-&gt; </span><span class="mi">1447</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">connect</span><span class="p">()</span>
-<span class="g g-Whitespace">   </span><span class="mi">1449</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_tunnel_host</span><span class="p">:</span>
-
-<span class="nn">File ~\miniconda3\envs\ml_venv\lib\http\client.py:946,</span> in <span class="ni">HTTPConnection.connect</span><span class="nt">(self)</span>
-<span class="g g-Whitespace">    </span><span class="mi">945</span><span class="w"> </span><span class="sd">&quot;&quot;&quot;Connect to the host and port specified in __init__.&quot;&quot;&quot;</span>
-<span class="ne">--&gt; </span><span class="mi">946</span> <span class="bp">self</span><span class="o">.</span><span class="n">sock</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_create_connection</span><span class="p">(</span>
-<span class="g g-Whitespace">    </span><span class="mi">947</span>     <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">host</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">port</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">timeout</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">source_address</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">948</span> <span class="c1"># Might fail in OSs that don&#39;t implement TCP_NODELAY</span>
-
-<span class="nn">File ~\miniconda3\envs\ml_venv\lib\socket.py:856,</span> in <span class="ni">create_connection</span><span class="nt">(address, timeout, source_address)</span>
-<span class="g g-Whitespace">    </span><span class="mi">855</span> <span class="k">try</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">856</span>     <span class="k">raise</span> <span class="n">err</span>
-<span class="g g-Whitespace">    </span><span class="mi">857</span> <span class="k">finally</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">858</span>     <span class="c1"># Break explicitly a reference cycle</span>
-
-<span class="nn">File ~\miniconda3\envs\ml_venv\lib\socket.py:844,</span> in <span class="ni">create_connection</span><span class="nt">(address, timeout, source_address)</span>
-<span class="g g-Whitespace">    </span><span class="mi">843</span>     <span class="n">sock</span><span class="o">.</span><span class="n">bind</span><span class="p">(</span><span class="n">source_address</span><span class="p">)</span>
-<span class="ne">--&gt; </span><span class="mi">844</span> <span class="n">sock</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">sa</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">845</span> <span class="c1"># Break explicitly a reference cycle</span>
-
-<span class="ne">TimeoutError</span>: [WinError 10060] Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder
-
-<span class="n">During</span> <span class="n">handling</span> <span class="n">of</span> <span class="n">the</span> <span class="n">above</span> <span class="n">exception</span><span class="p">,</span> <span class="n">another</span> <span class="n">exception</span> <span class="n">occurred</span><span class="p">:</span>
-
-<span class="ne">URLError</span><span class="g g-Whitespace">                                  </span>Traceback (most recent call last)
-<span class="nn">File ~\miniconda3\envs\ml_venv\lib\site-packages\ucimlrepo\fetch.py:68,</span> in <span class="ni">fetch_ucirepo</span><span class="nt">(name, id)</span>
-<span class="g g-Whitespace">     </span><span class="mi">67</span> <span class="k">try</span><span class="p">:</span>
-<span class="ne">---&gt; </span><span class="mi">68</span>     <span class="n">response</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="n">api_url</span><span class="p">,</span> <span class="n">context</span><span class="o">=</span><span class="n">ssl</span><span class="o">.</span><span class="n">create_default_context</span><span class="p">(</span><span class="n">cafile</span><span class="o">=</span><span class="n">certifi</span><span class="o">.</span><span class="n">where</span><span class="p">()))</span>
-<span class="g g-Whitespace">     </span><span class="mi">69</span>     <span class="n">data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
-
-<span class="nn">File ~\miniconda3\envs\ml_venv\lib\urllib\request.py:214,</span> in <span class="ni">urlopen</span><span class="nt">(url, data, timeout, cafile, capath, cadefault, context)</span>
-<span class="g g-Whitespace">    </span><span class="mi">213</span>     <span class="n">opener</span> <span class="o">=</span> <span class="n">_opener</span>
-<span class="ne">--&gt; </span><span class="mi">214</span> <span class="k">return</span> <span class="n">opener</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">timeout</span><span class="p">)</span>
-
-<span class="nn">File ~\miniconda3\envs\ml_venv\lib\urllib\request.py:517,</span> in <span class="ni">OpenerDirector.open</span><span class="nt">(self, fullurl, data, timeout)</span>
-<span class="g g-Whitespace">    </span><span class="mi">516</span> <span class="n">sys</span><span class="o">.</span><span class="n">audit</span><span class="p">(</span><span class="s1">&#39;urllib.Request&#39;</span><span class="p">,</span> <span class="n">req</span><span class="o">.</span><span class="n">full_url</span><span class="p">,</span> <span class="n">req</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">req</span><span class="o">.</span><span class="n">headers</span><span class="p">,</span> <span class="n">req</span><span class="o">.</span><span class="n">get_method</span><span class="p">())</span>
-<span class="ne">--&gt; </span><span class="mi">517</span> <span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_open</span><span class="p">(</span><span class="n">req</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">519</span> <span class="c1"># post-process response</span>
-
-<span class="nn">File ~\miniconda3\envs\ml_venv\lib\urllib\request.py:534,</span> in <span class="ni">OpenerDirector._open</span><span class="nt">(self, req, data)</span>
-<span class="g g-Whitespace">    </span><span class="mi">533</span> <span class="n">protocol</span> <span class="o">=</span> <span class="n">req</span><span class="o">.</span><span class="n">type</span>
-<span class="ne">--&gt; </span><span class="mi">534</span> <span class="n">result</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_call_chain</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">handle_open</span><span class="p">,</span> <span class="n">protocol</span><span class="p">,</span> <span class="n">protocol</span> <span class="o">+</span>
-<span class="g g-Whitespace">    </span><span class="mi">535</span>                           <span class="s1">&#39;_open&#39;</span><span class="p">,</span> <span class="n">req</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">536</span> <span class="k">if</span> <span class="n">result</span><span class="p">:</span>
-
-<span class="nn">File ~\miniconda3\envs\ml_venv\lib\urllib\request.py:494,</span> in <span class="ni">OpenerDirector._call_chain</span><span class="nt">(self, chain, kind, meth_name, *args)</span>
-<span class="g g-Whitespace">    </span><span class="mi">493</span> <span class="n">func</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">handler</span><span class="p">,</span> <span class="n">meth_name</span><span class="p">)</span>
-<span class="ne">--&gt; </span><span class="mi">494</span> <span class="n">result</span> <span class="o">=</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">495</span> <span class="k">if</span> <span class="n">result</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-
-<span class="nn">File ~\miniconda3\envs\ml_venv\lib\urllib\request.py:1389,</span> in <span class="ni">HTTPSHandler.https_open</span><span class="nt">(self, req)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1388</span> <span class="k">def</span><span class="w"> </span><span class="nf">https_open</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">req</span><span class="p">):</span>
-<span class="ne">-&gt; </span><span class="mi">1389</span>     <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">do_open</span><span class="p">(</span><span class="n">http</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">HTTPSConnection</span><span class="p">,</span> <span class="n">req</span><span class="p">,</span>
-<span class="g g-Whitespace">   </span><span class="mi">1390</span>         <span class="n">context</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_context</span><span class="p">,</span> <span class="n">check_hostname</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_check_hostname</span><span class="p">)</span>
-
-<span class="nn">File ~\miniconda3\envs\ml_venv\lib\urllib\request.py:1349,</span> in <span class="ni">AbstractHTTPHandler.do_open</span><span class="nt">(self, http_class, req, **http_conn_args)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1348</span> <span class="k">except</span> <span class="ne">OSError</span> <span class="k">as</span> <span class="n">err</span><span class="p">:</span> <span class="c1"># timeout error</span>
-<span class="ne">-&gt; </span><span class="mi">1349</span>     <span class="k">raise</span> <span class="n">URLError</span><span class="p">(</span><span class="n">err</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1350</span> <span class="n">r</span> <span class="o">=</span> <span class="n">h</span><span class="o">.</span><span class="n">getresponse</span><span class="p">()</span>
-
-<span class="ne">URLError</span>: &lt;urlopen error [WinError 10060] Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder&gt;
-
-<span class="n">During</span> <span class="n">handling</span> <span class="n">of</span> <span class="n">the</span> <span class="n">above</span> <span class="n">exception</span><span class="p">,</span> <span class="n">another</span> <span class="n">exception</span> <span class="n">occurred</span><span class="p">:</span>
-
-<span class="ne">ConnectionError</span><span class="g g-Whitespace">                           </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">line</span> <span class="mi">4</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="kn">from</span><span class="w"> </span><span class="nn">ucimlrepo</span><span class="w"> </span><span class="kn">import</span> <span class="n">fetch_ucirepo</span> 
-<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="c1"># fetch dataset </span>
-<span class="ne">----&gt; </span><span class="mi">4</span> <span class="n">heart_disease</span> <span class="o">=</span> <span class="n">fetch_ucirepo</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="mi">45</span><span class="p">)</span> 
-<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="c1"># data (as pandas dataframes) </span>
-<span class="g g-Whitespace">      </span><span class="mi">7</span> <span class="n">X</span> <span class="o">=</span> <span class="n">heart_disease</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">features</span> 
-
-<span class="nn">File ~\miniconda3\envs\ml_venv\lib\site-packages\ucimlrepo\fetch.py:71,</span> in <span class="ni">fetch_ucirepo</span><span class="nt">(name, id)</span>
-<span class="g g-Whitespace">     </span><span class="mi">69</span>     <span class="n">data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">70</span> <span class="k">except</span> <span class="p">(</span><span class="n">urllib</span><span class="o">.</span><span class="n">error</span><span class="o">.</span><span class="n">URLError</span><span class="p">,</span> <span class="n">urllib</span><span class="o">.</span><span class="n">error</span><span class="o">.</span><span class="n">HTTPError</span><span class="p">):</span>
-<span class="ne">---&gt; </span><span class="mi">71</span>     <span class="k">raise</span> <span class="ne">ConnectionError</span><span class="p">(</span><span class="s1">&#39;Error connecting to server&#39;</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">73</span> <span class="c1"># verify that dataset exists </span>
-<span class="g g-Whitespace">     </span><span class="mi">74</span> <span class="k">if</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;status&#39;</span><span class="p">]</span> <span class="o">!=</span> <span class="mi">200</span><span class="p">:</span>
-
-<span class="ne">ConnectionError</span>: Error connecting to server
 </pre></div>
 </div>
 </div>
@@ -948,7 +831,7 @@ memory usage: 33.3 KB
 <li><p><strong>Consumo de Memoria:</strong> La estructura de datos consume aproximadamente 33.3 KB de memoria, lo que confirma que es un conjunto de datos de tamaño manejable que no requiere técnicas especiales de optimización de memoria.</p></li>
 </ol>
 <section id="valores-unicos">
-<h3><strong>Valores únicos</strong><a class="headerlink" href="#valores-unicos" title="Link to this heading">#</a></h3>
+<h3><strong>Valores Únicos</strong><a class="headerlink" href="#valores-unicos" title="Link to this heading">#</a></h3>
 <p>Se calcula el número de valores únicos para cada variable del DataFrame.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1251,26 +1134,23 @@ dtype: float64
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">=== </span><span class="si">{</span><span class="n">col</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span><span class="si">}</span><span class="s2"> ===&quot;</span><span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
     
-    <span class="c1"># Definir el orden y los colores consistentes</span>
     <span class="n">value_order</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">())</span>
-    <span class="n">colors</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">color_palette</span><span class="p">(</span><span class="s1">&#39;bright&#39;</span><span class="p">)</span>  <span class="c1"># Misma paleta para ambos gráficos</span>
+    <span class="n">colors</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">color_palette</span><span class="p">(</span><span class="s1">&#39;bright&#39;</span><span class="p">)</span> 
     
-    <span class="c1"># Primer subplot - Gráfico de barras</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
     <span class="n">ax</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">countplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">],</span> <span class="n">palette</span><span class="o">=</span><span class="n">colors</span><span class="p">,</span> <span class="n">order</span><span class="o">=</span><span class="n">value_order</span><span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Conteo de </span><span class="si">{</span><span class="n">col</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
     
-    <span class="c1"># Añadir los valores encima de las barras</span>
     <span class="k">for</span> <span class="n">container</span> <span class="ow">in</span> <span class="n">ax</span><span class="o">.</span><span class="n">containers</span><span class="p">:</span>
         <span class="n">ax</span><span class="o">.</span><span class="n">bar_label</span><span class="p">(</span><span class="n">container</span><span class="p">,</span> <span class="n">fmt</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">%d</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">label_type</span><span class="o">=</span><span class="s1">&#39;edge&#39;</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
     
     <span class="c1"># Segundo subplot - Diagrama de torta</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
-    <span class="n">counts</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">value_order</span><span class="p">]</span>  <span class="c1"># Ordenar los conteos</span>
+    <span class="n">counts</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">value_order</span><span class="p">]</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">pie</span><span class="p">(</span><span class="n">counts</span><span class="p">,</span> 
             <span class="n">labels</span><span class="o">=</span><span class="n">counts</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> 
             <span class="n">autopct</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">%1.1f%%</span><span class="s1">&#39;</span><span class="p">,</span>
-            <span class="n">colors</span><span class="o">=</span><span class="n">colors</span><span class="p">)</span>  <span class="c1"># Usar la misma paleta ordenada</span>
+            <span class="n">colors</span><span class="o">=</span><span class="n">colors</span><span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Distribución de </span><span class="si">{</span><span class="n">col</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
     
     <span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
@@ -1328,7 +1208,6 @@ dtype: float64
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">=== </span><span class="si">{</span><span class="n">col</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span><span class="si">}</span><span class="s2"> ===&quot;</span><span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
     
-    <span class="c1"># Obtener el orden de las categorías según el diccionario</span>
     <span class="n">value_order</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">())</span>  
     
     <span class="c1"># Crear el gráfico de barras ordenado</span>
@@ -1553,35 +1432,35 @@ Kurtosis:  -0.52
 Coeficiente de Variación:  16.6 %
 </pre></div>
 </div>
-<img alt="_images/87fb0338d077a48314bf111878c05c37d41f6c17e10a6031a16d2af9e932e592.png" src="_images/87fb0338d077a48314bf111878c05c37d41f6c17e10a6031a16d2af9e932e592.png" />
+<img alt="_images/dd44930c69fbe52d96b3dc1a6810a5e471a7719b08cbff7b1a550ff422330eee.png" src="_images/dd44930c69fbe52d96b3dc1a6810a5e471a7719b08cbff7b1a550ff422330eee.png" />
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>=== TRESTBPS ===
 Skew: 0.71
 Kurtosis:  0.88
 Coeficiente de Variación:  13.36 %
 </pre></div>
 </div>
-<img alt="_images/4234e3023f66adcafc8466f3f50d6ea823fb71ef5c71c88c92fdbaaf549a32db.png" src="_images/4234e3023f66adcafc8466f3f50d6ea823fb71ef5c71c88c92fdbaaf549a32db.png" />
+<img alt="_images/3f336ff88850dd4cae870bc936517f2da602a8aed14973bb3f57924709720d75.png" src="_images/3f336ff88850dd4cae870bc936517f2da602a8aed14973bb3f57924709720d75.png" />
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>=== CHOL ===
 Skew: 1.14
 Kurtosis:  4.49
 Coeficiente de Variación:  20.99 %
 </pre></div>
 </div>
-<img alt="_images/7281af31121e8016b9dce436dbbf16cbe61a34ec3223b8a59df5e579afabe5eb.png" src="_images/7281af31121e8016b9dce436dbbf16cbe61a34ec3223b8a59df5e579afabe5eb.png" />
+<img alt="_images/4b247a103bd5ad4e660db80be42b03e879f969dc4d8562ad1432d7fd8f4af810.png" src="_images/4b247a103bd5ad4e660db80be42b03e879f969dc4d8562ad1432d7fd8f4af810.png" />
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>=== THALACH ===
 Skew: -0.54
 Kurtosis:  -0.05
 Coeficiente de Variación:  15.29 %
 </pre></div>
 </div>
-<img alt="_images/6fcb7b73919ffd2bf730fe620d216bfc7afc650d45e7889b9a850466fc78f27f.png" src="_images/6fcb7b73919ffd2bf730fe620d216bfc7afc650d45e7889b9a850466fc78f27f.png" />
+<img alt="_images/874b4b68409939bbde07a7ce1dee775167baa8def09adf5a2d2aa447ce82f382.png" src="_images/874b4b68409939bbde07a7ce1dee775167baa8def09adf5a2d2aa447ce82f382.png" />
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>=== OLDPEAK ===
 Skew: 1.27
 Kurtosis:  1.58
 Coeficiente de Variación:  111.68 %
 </pre></div>
 </div>
-<img alt="_images/4ad9633b3343c6893ef4cba404a4095b6951692e2a7e2ac247f1e8a0883dd442.png" src="_images/4ad9633b3343c6893ef4cba404a4095b6951692e2a7e2ac247f1e8a0883dd442.png" />
+<img alt="_images/11efb5102bc6a0caa74c5ebb13ecef9b7d001e52b1fac3386c52ed3205f50a54.png" src="_images/11efb5102bc6a0caa74c5ebb13ecef9b7d001e52b1fac3386c52ed3205f50a54.png" />
 </div>
 </div>
 <p><strong>Interpretación</strong></p>
@@ -1875,7 +1754,7 @@ Coeficiente de Variación:  12.95 %
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Figure size 1200x600 with 0 Axes&gt;
 </pre></div>
 </div>
-<img alt="_images/d66a464476ff0e74b95f8361e0bfb9b08feb44541afe629c24063e3e41ba3f9f.png" src="_images/d66a464476ff0e74b95f8361e0bfb9b08feb44541afe629c24063e3e41ba3f9f.png" />
+<img alt="_images/37fc0e9a46145491ac046a77d3c028669b315a560a2de79f66223dcc6c4c74c1.png" src="_images/37fc0e9a46145491ac046a77d3c028669b315a560a2de79f66223dcc6c4c74c1.png" />
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>=== CHOL ===
 Skew: 0.6
 Kurtosis:  0.6
@@ -1885,7 +1764,7 @@ Coeficiente de Variación:  19.83 %
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Figure size 1200x600 with 0 Axes&gt;
 </pre></div>
 </div>
-<img alt="_images/53a8d756c2ee1c45a5f1a8d212d902c64fda01ce63b31a15f9407dc2999cc68d.png" src="_images/53a8d756c2ee1c45a5f1a8d212d902c64fda01ce63b31a15f9407dc2999cc68d.png" />
+<img alt="_images/83de66ab85d678a14838dd806a46804414b74612cd48beaa917b59e9cbc3aeec.png" src="_images/83de66ab85d678a14838dd806a46804414b74612cd48beaa917b59e9cbc3aeec.png" />
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>=== OLDPEAK ===
 Skew: 1.03
 Kurtosis:  0.26
@@ -1895,7 +1774,7 @@ Coeficiente de Variación:  108.91 %
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Figure size 1200x600 with 0 Axes&gt;
 </pre></div>
 </div>
-<img alt="_images/6b828d35b6bfeb7e8954ef4d963e78752357e01350f88e59808d33229a8a97ad.png" src="_images/6b828d35b6bfeb7e8954ef4d963e78752357e01350f88e59808d33229a8a97ad.png" />
+<img alt="_images/f552978ca0bdc21d7144a14015f8d12f02c2a4ce09565f5d7afe4f706534b2f2.png" src="_images/f552978ca0bdc21d7144a14015f8d12f02c2a4ce09565f5d7afe4f706534b2f2.png" />
 </div>
 </div>
 <p><strong>Interpretación</strong></p>
@@ -2110,7 +1989,7 @@ Coeficiente de Variación:  108.91 %
 </ul>
 </section>
 <section id="variables-numericas-vs-num">
-<h3>Variables Númericas vs Num<a class="headerlink" href="#variables-numericas-vs-num" title="Link to this heading">#</a></h3>
+<h3><strong>Variables Númericas vs Num</strong><a class="headerlink" href="#variables-numericas-vs-num" title="Link to this heading">#</a></h3>
 <p>Con el objetivo de identificar la relación entre las variables numéricas predictoras y la variable objetivo (<code class="docutils literal notranslate"><span class="pre">num</span></code>), se genera una serie de diagramas de caja (boxplots). Esta visualización permite comparar la distribución (mediana, rango intercuartílico) de cada variable numérica segmentada por la clase de diagnóstico, facilitando la observación de diferencias significativas entre los grupos que podrían ser patrones predictivos clave.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -2134,23 +2013,23 @@ Coeficiente de Variación:  108.91 %
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>=== AGE ===
 </pre></div>
 </div>
-<img alt="_images/1499370e7684b563fe82ed00f57a7672ef35143283577c1649cf4607d48730ed.png" src="_images/1499370e7684b563fe82ed00f57a7672ef35143283577c1649cf4607d48730ed.png" />
+<img alt="_images/de5a28ac4ffc22f629f40fe98605c36822d4723af01478a774568052f0fbad7e.png" src="_images/de5a28ac4ffc22f629f40fe98605c36822d4723af01478a774568052f0fbad7e.png" />
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>=== TRESTBPS ===
 </pre></div>
 </div>
-<img alt="_images/3b181934608b49c145baf05369d4a243e69b50125156e073dcce1f67844edec9.png" src="_images/3b181934608b49c145baf05369d4a243e69b50125156e073dcce1f67844edec9.png" />
+<img alt="_images/ee27f1744950c5675fbd27da230cd113bfe16b27cf5439d28c5a3a5f5e9a6611.png" src="_images/ee27f1744950c5675fbd27da230cd113bfe16b27cf5439d28c5a3a5f5e9a6611.png" />
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>=== CHOL ===
 </pre></div>
 </div>
-<img alt="_images/def72e58790cd65cde22cf6035ca4c5020e277a024a81c55c02795f244ed9bdc.png" src="_images/def72e58790cd65cde22cf6035ca4c5020e277a024a81c55c02795f244ed9bdc.png" />
+<img alt="_images/fe2abde86b275c9a8297ef5dc6302371fe878f2eb0696fd29c9df4fe634be948.png" src="_images/fe2abde86b275c9a8297ef5dc6302371fe878f2eb0696fd29c9df4fe634be948.png" />
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>=== THALACH ===
 </pre></div>
 </div>
-<img alt="_images/58ff7c45ffbd26d51f6bf297ebcc60a236d5bb1cc64e29817a99e4846e8d746a.png" src="_images/58ff7c45ffbd26d51f6bf297ebcc60a236d5bb1cc64e29817a99e4846e8d746a.png" />
+<img alt="_images/9ad8eac490eb2c09478483fcb5bdce842c3cabc15e68d0b9f78ddfcb082afbc0.png" src="_images/9ad8eac490eb2c09478483fcb5bdce842c3cabc15e68d0b9f78ddfcb082afbc0.png" />
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>=== OLDPEAK ===
 </pre></div>
 </div>
-<img alt="_images/9a8fd2d6ad8cd922c4e5fd420afa32b003957d8ea116c6b631fcba8952a0a886.png" src="_images/9a8fd2d6ad8cd922c4e5fd420afa32b003957d8ea116c6b631fcba8952a0a886.png" />
+<img alt="_images/6e74a8b750ea018c3eeecb0fcabeb59e3caf6d4dd43316e433d64fe37653d14c.png" src="_images/6e74a8b750ea018c3eeecb0fcabeb59e3caf6d4dd43316e433d64fe37653d14c.png" />
 </div>
 </div>
 <p><strong>Interpretación</strong></p>
@@ -2308,7 +2187,7 @@ Coeficiente de Variación:  108.91 %
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/cc3d0d9a93cc036ae510c47193a5900fa341f34198b8444335998bd069abbdbc.png" src="_images/cc3d0d9a93cc036ae510c47193a5900fa341f34198b8444335998bd069abbdbc.png" />
+<img alt="_images/be2f77f2fcbd3d9076f0e498cee53d7059f6e2a401c5a0ec4c1750cf70bd0f02.png" src="_images/be2f77f2fcbd3d9076f0e498cee53d7059f6e2a401c5a0ec4c1750cf70bd0f02.png" />
 </div>
 </div>
 </section>
@@ -3917,7 +3796,7 @@ Recall: 0.8928571428571429
 F1-score: 0.6944444444444444
 </pre></div>
 </div>
-<img alt="_images/f5d09de259bd679e9fda16473c0f62798590d066e783eb83197215b7d8cf2e56.png" src="_images/f5d09de259bd679e9fda16473c0f62798590d066e783eb83197215b7d8cf2e56.png" />
+<img alt="_images/8071acada8007d170bd61f5820345413461ba38ffaab7a0a7fe5871ef328c8b1.png" src="_images/8071acada8007d170bd61f5820345413461ba38ffaab7a0a7fe5871ef328c8b1.png" />
 <img alt="_images/b16b0137ca3b132f7ffab6fa1b37edec5aaa2c7a2cd235da4220692cf0474c7d.png" src="_images/b16b0137ca3b132f7ffab6fa1b37edec5aaa2c7a2cd235da4220692cf0474c7d.png" />
 </div>
 </div>
@@ -4054,7 +3933,7 @@ Recall: 0.9285714285714286
 F1-score: 0.9122807017543859
 </pre></div>
 </div>
-<img alt="_images/2151bd36ab562c84e2b918c961020767f4be8b9a8611135ce21ee453f3391422.png" src="_images/2151bd36ab562c84e2b918c961020767f4be8b9a8611135ce21ee453f3391422.png" />
+<img alt="_images/9f240eb878ff5933fa369f9b3319fbf7916b7fc52893ec4664cf42f7fa37416a.png" src="_images/9f240eb878ff5933fa369f9b3319fbf7916b7fc52893ec4664cf42f7fa37416a.png" />
 <img alt="_images/aa67e8012e2ff5740c343887371a4e6864ece59423402d5354671224dd6b2663.png" src="_images/aa67e8012e2ff5740c343887371a4e6864ece59423402d5354671224dd6b2663.png" />
 </div>
 </div>
@@ -4204,7 +4083,7 @@ Recall: 0.8571428571428571
 F1-score: 0.8421052631578947
 </pre></div>
 </div>
-<img alt="_images/8c2bf49f1a482d95890b9bc996c2370f9be1983f4a756bcb9579986abe0d38f2.png" src="_images/8c2bf49f1a482d95890b9bc996c2370f9be1983f4a756bcb9579986abe0d38f2.png" />
+<img alt="_images/284ca26e80cdea70ec0e1a766d92550ba5c308cfb665f842a1716b8818b94b27.png" src="_images/284ca26e80cdea70ec0e1a766d92550ba5c308cfb665f842a1716b8818b94b27.png" />
 <img alt="_images/c2401a85165b731847095d6790cb9120d3a7ec918df7b05d16a9bd9225b8b36a.png" src="_images/c2401a85165b731847095d6790cb9120d3a7ec918df7b05d16a9bd9225b8b36a.png" />
 </div>
 </div>
@@ -4779,8 +4658,8 @@ Mejor Score (AUC): 0.8905397340179949
 <li><p><strong>La diferencia entre modelos es pequeña</strong> (rango de 0.026), sugiriendo que todos capturan patrones similares.</p></li>
 </ul>
 </section>
-<section id="evaluacion-del-modelo-de-clasificacion-en-el-conjunto-de-prueba-modelo-de-logisticregression">
-<h2><strong>Evaluación del Modelo de Clasificación en el Conjunto de Prueba (Modelo de LogisticRegression)</strong><a class="headerlink" href="#evaluacion-del-modelo-de-clasificacion-en-el-conjunto-de-prueba-modelo-de-logisticregression" title="Link to this heading">#</a></h2>
+<section id="evaluacion-del-modelo-de-clasificacion-en-el-conjunto-de-prueba-modelo-de-logistic-regression">
+<h2><strong>Evaluación del Modelo de Clasificación en el Conjunto de Prueba (Modelo de Logistic Regression)</strong><a class="headerlink" href="#evaluacion-del-modelo-de-clasificacion-en-el-conjunto-de-prueba-modelo-de-logistic-regression" title="Link to this heading">#</a></h2>
 <p>Para completar el análisis del objetivo de clasificación binaria, se evaluó el desempeño del modelo LogisticRegression en el conjunto de prueba reservado para esta tarea. La evaluación de un modelo de clasificación requiere un análisis más multidimensional que la regresión, ya que es necesario considerar no solo la capacidad de predicción general (accuracy) sino también el equilibrio entre los diferentes tipos de error (falsos positivos y falsos negativos), lo cual es crucial dependiendo del contexto de aplicación.</p>
 <p>El modelo se reentrenó con la totalidad del conjunto de entrenamiento de clasificación (<code class="docutils literal notranslate"><span class="pre">X_train</span></code>, <code class="docutils literal notranslate"><span class="pre">y_train</span></code>) y se generaron tanto predicciones de clase (<code class="docutils literal notranslate"><span class="pre">predict</span></code>) como probabilidades (<code class="docutils literal notranslate"><span class="pre">predict_proba</span></code>) para el conjunto de prueba. El desempeño se evaluó mediante un conjunto exhaustivo de métricas y visualizaciones:</p>
 <ul class="simple">
@@ -4801,8 +4680,7 @@ Mejor Score (AUC): 0.8905397340179949
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.metrics</span><span class="w"> </span><span class="kn">import</span> <span class="n">confusion_matrix</span><span class="p">,</span> <span class="n">ConfusionMatrixDisplay</span>
-<span class="n">y_pred</span> <span class="o">=</span> <span class="n">pipeline_logreg_cv</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">y_pred</span> <span class="o">=</span> <span class="n">pipeline_logreg_cv</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
 <span class="n">y_pred_proba</span> <span class="o">=</span> <span class="n">pipeline_logreg_cv</span><span class="o">.</span><span class="n">predict_proba</span><span class="p">(</span><span class="n">X_test</span><span class="p">)[:,</span> <span class="mi">1</span><span class="p">]</span>
 
 <span class="n">acc</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
@@ -4817,14 +4695,15 @@ Mejor Score (AUC): 0.8905397340179949
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;F1-score:&quot;</span><span class="p">,</span> <span class="n">f1</span><span class="p">)</span>
 
 <span class="n">cm</span> <span class="o">=</span> <span class="n">confusion_matrix</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
-<span class="n">disp</span> <span class="o">=</span> <span class="n">ConfusionMatrixDisplay</span><span class="p">(</span><span class="n">confusion_matrix</span><span class="o">=</span><span class="n">cm</span><span class="p">,</span> 
-                             <span class="n">display_labels</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;No Enfermedad&#39;</span><span class="p">,</span> <span class="s1">&#39;Enfermedad Cardíaca&#39;</span><span class="p">])</span>
-<span class="n">disp</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;Blues&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">cm</span><span class="p">,</span> <span class="n">annot</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">fmt</span><span class="o">=</span><span class="s2">&quot;d&quot;</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;Blues&quot;</span><span class="p">,</span> <span class="n">xticklabels</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;No Enfermedad Cardíaca&quot;</span><span class="p">,</span><span class="s2">&quot;Enfermedad Cardíaca&quot;</span><span class="p">],</span> 
+            <span class="n">yticklabels</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;No Enfermedad Cardíaca&quot;</span><span class="p">,</span><span class="s2">&quot;Enfermedad Cardíaca&quot;</span><span class="p">])</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Predicción&quot;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Real&quot;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Matriz de confusión&quot;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
 
 <span class="n">fpr</span><span class="p">,</span> <span class="n">tpr</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">roc_curve</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred_proba</span><span class="p">)</span>
 <span class="n">roc_auc</span> <span class="o">=</span> <span class="n">auc</span><span class="p">(</span><span class="n">fpr</span><span class="p">,</span> <span class="n">tpr</span><span class="p">)</span>
@@ -4848,7 +4727,7 @@ Recall: 0.8928571428571429
 F1-score: 0.8771929824561403
 </pre></div>
 </div>
-<img alt="_images/f2b61b6d5f1e62ee8576d5669b56c8bcbc06003b7c5e5ee9b9f33ea1c69b0229.png" src="_images/f2b61b6d5f1e62ee8576d5669b56c8bcbc06003b7c5e5ee9b9f33ea1c69b0229.png" />
+<img alt="_images/904439d70fb32317779050b839c1eefde7db8d314eb83fbb0477c4f795a57516.png" src="_images/904439d70fb32317779050b839c1eefde7db8d314eb83fbb0477c4f795a57516.png" />
 <img alt="_images/b6b21cb268d0c16726798efa2078eda62b6604a279b497fd27bef9c0d827d0c9.png" src="_images/b6b21cb268d0c16726798efa2078eda62b6604a279b497fd27bef9c0d827d0c9.png" />
 </div>
 </div>
@@ -4987,20 +4866,20 @@ F1-score: 0.8771929824561403
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="markdown.html"
+       href="introduccion.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><strong>Reflexiones y Conclusiones</strong></p>
+        <p class="prev-next-title"><strong>Introducción al Proyecto</strong></p>
       </div>
     </a>
     <a class="right-next"
-       href="markdown-notebooks.html"
+       href="conclusion.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Notebooks with MyST Markdown</p>
+        <p class="prev-next-title"><strong>Reflexiones y Conclusiones</strong></p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -5022,7 +4901,7 @@ F1-score: 0.8771929824561403
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#importar-librerias"><strong>Importar Librerías</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lectura-de-datos"><strong>Lectura de Datos</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#valores-unicos"><strong>Valores únicos</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#valores-unicos"><strong>Valores Únicos</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#valores-nulos"><strong>Valores Nulos</strong></a></li>
 </ul>
 </li>
@@ -5042,7 +4921,7 @@ F1-score: 0.8771929824561403
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-bivariado"><strong>Análisis Bivariado</strong></a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-binarias-vs-num"><strong>Variables Binarias vs Num</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-categoricas-vs-num"><strong>Variables Categóricas vs Num</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-numericas-vs-num">Variables Númericas vs Num</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#variables-numericas-vs-num"><strong>Variables Númericas vs Num</strong></a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-multivariado"><strong>Análisis Multivariado</strong></a></li>
@@ -5064,7 +4943,7 @@ F1-score: 0.8771929824561403
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#comparacion-con-logisticregression"><strong>Comparación con LogisticRegression</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluacion-del-modelo-de-clasificacion-en-el-conjunto-de-prueba-modelo-de-logisticregression"><strong>Evaluación del Modelo de Clasificación en el Conjunto de Prueba (Modelo de LogisticRegression)</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluacion-del-modelo-de-clasificacion-en-el-conjunto-de-prueba-modelo-de-logistic-regression"><strong>Evaluación del Modelo de Clasificación en el Conjunto de Prueba (Modelo de Logistic Regression)</strong></a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-de-calibracion-y-distribucion-de-probabilidades-del-modelo-logisticregression"><strong>Análisis de Calibración y Distribución de Probabilidades del Modelo LogisticRegression</strong></a></li>
 </ul>
 </li>
@@ -5083,7 +4962,7 @@ F1-score: 0.8771929824561403
   <div class="footer-item">
     
 <p class="component-author">
-By The Jupyter Book Community
+By David Marquez & Cristian Linero
 </p>
 
   </div>
